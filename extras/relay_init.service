@@ -1,0 +1,12 @@
+#/etc/systemd/system/relay_init.service
+
+[Unit]
+Description = DICOM Relay Init
+After = network.target
+
+[Service]
+WorkingDirectory = /srv/dicom_relay
+ExecStart = /srv/dicom_relay/relay_init.sh
+
+[Install]
+WantedBy = multi-user.target

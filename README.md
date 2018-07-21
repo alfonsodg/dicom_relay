@@ -11,10 +11,14 @@ En varios casos ciertos proveedores o centros de salud construyen sus soluciones
 
 ##Cómo funciona?
 Es un proceso de 2 fases:
+
 * Activar el relay mediante el script **relay_init.sh**
-    > Inicializa un repositorio DICOM empleando el AETITLE (DICOMRELAY) en el puerto 11112 que guardará los objetos DICOM en /srv/dicom_repo (puede modificar el nombre)
+
+> Inicializa un repositorio DICOM empleando el AETITLE (DICOMRELAY) en el puerto 11112 que guardará los objetos DICOM en /srv/dicom_repo (puede modificar el nombre)
+
 * Activar el revisor de sistema de archivos **relay_process.sh**
-    > Revisa el directorio /srv/dicom_repo y procesa el contenido de este archivo por archivo enviándolos al PACS destino y eliminándolos una vez terminado.
+
+> Revisa el directorio /srv/dicom_repo y procesa el contenido de este archivo por archivo enviándolos al PACS destino y eliminándolos una vez terminado.
 
 
 ##Manipulación de los atributos DICOM

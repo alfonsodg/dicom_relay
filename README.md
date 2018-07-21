@@ -76,3 +76,8 @@ systemctl enable relay_process
 Empleando el mismo dmc4che-toolkit se prueba el RELAY, modificar los valores según sea el caso, considerando además que se envía todo el contenido de un DIRECTORIO_DICOM
 ```
 /opt/dcm4che-toolkit/bin/storescu -c AETITLE@IP-ADDRESS:PORT /DIRECTORIO_DICOM
+
+
+##Licencia
+Este software es entregado bajo licencia GPL v3, excepto en las librerías que no sean compatibles con esta licencia.  Revisar el archivo **gplv3.md
+** para los detalles y alcances del mismo
